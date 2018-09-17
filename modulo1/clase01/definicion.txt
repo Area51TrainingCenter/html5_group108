@@ -1,0 +1,18 @@
+﻿article -> contendio de información independiente
+
+nav -> contenedor de la lista de enlances que representa mi menu principal
+
+section ->  contenedor de información realacionada entre si, contenedor de información especifica.
+
+aside->información no esta directamente relacionada.
+
+footer-> contenedor de cierre de mi contenido
+
+header-> contenedor de la información considera la mas importante de mi contenido.
+
+
+
+main-> contenedor de todo mi contenido-
+
+
+
