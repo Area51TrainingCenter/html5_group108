@@ -1,0 +1,76 @@
+body
+{
+	font-family: 'Roboto', arial;
+	font-size: 14px;
+	color: black;
+}
+
+/* aqui los estilos de los titulos */
+h2{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-style: italic;
+	margin:0 0 50px 0; 
+	font-size: 20px;
+	color: red;
+}
+
+h2.amarillo{
+	color: yellow;
+}
+
+h2.amarillo.patito{
+	font-size: 40px;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+header
+{
+	padding: 30px;
+}
+
+ul
+{
+	list-style: none;
+	padding-left: 0;
+}
+
+article
+{
+	padding: 30px;
+	margin-bottom: 30px;
+	border-bottom: 2px solid #ddd;
+}
+
+article h2.patito span i
+{
+
+}
+
+p
+{
+	line-height: 2;
+	color: blue;
+}
+
+span
+{
+	color: red;
+}
+
+img
+{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+#logo
+{
+	width: 50px;
+	height: auto;
+}
