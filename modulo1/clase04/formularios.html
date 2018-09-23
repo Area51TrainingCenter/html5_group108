@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Esta es mi primera web">
+	<meta name="keywords" content="alumnos,clase01,html">
+	<title>Clase 04</title>
+	<link rel="stylesheet"  href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+	<img src="img/logo.png" id="logo" width="50">
+	<nav>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="ejercicio.html">Ejercicio</a></li>
+			<li><a href="formularios.html">Formularios</a></li>
+			<li><a href="#noticia4">Contacto</a></li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<section>
+		<article id="noticia1">
+			<form id="frmcontacto" enctype="multipart/form-data" method="post" action="registro.php">
+				<input type="hidden" name="user_id">
+				<div>
+					<input required type="text" name="nombre" id="nombre" value="" placeholder="Ingresa tu nombre" >
+				</div>
+				<div>
+					<input type="text" name="apellido" id="apellido" value="Perez" placeholder="Ingresa tu nombre" readonly >
+				</div>
+				<div>
+					<input type="number" id="numero" name="numero">
+				</div>
+				<div>
+					<input checked type="radio" name="sexo" value="m" >Mujer
+					<input type="radio" name="sexo" value="h" >Hombre
+					<input type="radio" name="sexo" value="x">X
+				</div>
+				<div>
+					<input checked type="checkbox" name="modelo[]" value="toyota">Toyota
+					<input type="checkbox" name="modelo[]" value="4runnrt">4runner
+				</div>
+				<div>
+					<input type="password" name="password">
+				</div>
+				<div>
+					<input type="color" name="color">
+				</div>
+				<div>
+					<input type="date" name="fecha">
+				</div>
+				<div>
+					<input type="week" name="semana">
+				</div>
+				<div>
+					<input type="month" name="mes">
+				</div>
+				<div>
+					<input type="email" name="email">
+				</div>
+				<div>
+					<input type="file" name="archivo">
+				</div>
+				<div>
+					<input type="time" name="tiempo">
+				</div>
+				<div>
+					<input type="url" name="url">
+				</div>
+				<div>
+					<!-- atributo multiple, permite selecionar varias opciones -->
+					<select name="lista" >
+						<!-- lista de seleccion simple -->
+						<!-- Value es el valor que se envia al servidor -->
+						<option value="">-- Selecciona una opcion --</option>
+						<option value="1">Los olivos</option>
+						<option value="2" selected>Independencia</option>
+						<option value="3">Comas</option>
+						<option value="4">Chorrilos</option>
+						<option value="5">Villa el salvador</option>
+					</select>
+				</div>
+				<div>
+					<select name="lista2">
+						<!-- lista de seleccion agrupada -->
+						<!-- Value es el valor que se envia al servidor -->
+						<option value="">-- Selecciona una opcion --</option>
+						<optgroup label="Distritos de cono norte">
+							<option value="1">Los olivos</option>
+							<option value="2" selected>Independencia</option>
+							<option value="3">Comas</option>
+						</optgroup>
+						<optgroup label="Distritos de cono sur">
+							<option value="4">Chorrilos</option>
+							<option value="5">Villa el salvador</option>
+						</optgroup>
+						
+					</select>
+				</div>
+				<div>
+					<textarea name="mensaje" cols="10" rows="10" placeholder="mensaje"></textarea>
+				</div>
+				<div>
+					<input type="reset" name="" value="limpiar">
+				</div>
+				<div>
+					<input type="submit" name="" value="ENVIAR">
+				</div>
+			</form>
+		</article>
+	</section>
+</main>
+</body>
+</html>
