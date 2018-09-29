@@ -1,0 +1,131 @@
+*{
+	box-sizing: border-box;
+}
+
+html
+{
+	font-size: 14px;
+}
+
+body
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	color: black;
+	margin-top: 135px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.img-fluid
+{
+	width: 100%;
+	display: block;
+	height: auto;
+}
+
+.container,
+.container-fluid
+{
+	padding: 0 1rem;
+	margin: 0 auto 0 auto;
+	position: relative;
+}
+
+.container
+{
+	width: 1199px;
+}
+
+.container-fluid
+{
+	width: 100%;
+}
+
+.row
+{
+	margin: 0 -1rem;
+}
+
+.columna
+{
+	display: inline-block;
+	margin: 0 -1px;
+}
+
+header
+{
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	z-index: 9999;
+	top: 0px;
+	left: 0px;
+	padding: 1rem 0;
+	background-color: rgba(255,255,255, 0.5);
+}
+
+header .img-logo
+{
+	display: inline-block;
+	width: 100px;
+	height: auto;
+	margin-bottom: 1rem;
+}
+
+header nav
+{
+	
+}
+
+header nav a
+{
+	display: inline-block;
+	margin: 0 1px;
+	padding: 10px 20px;
+	line-height: 1;
+	color: #000;
+}
+
+section.seccion1
+{
+	height: calc(100vh - 135px);
+	background-color: #000;
+	position: relative;
+}
+
+section.seccion1 img
+{
+	object-fit: cover;
+	object-position: center;
+	height: 100%;
+	width: 100%;
+	opacity: .6;
+}
+
+section.seccion1 .contenedor-titulo
+{
+	position: absolute;
+	top: 50%;
+	left: 3rem;
+	text-align: left;
+	margin-top: -37px;
+}
+
+section.seccion1 .contenedor-titulo h1
+{
+	color: #fff;
+	font-size: 3.5rem;
+	text-transform: uppercase;
+	margin: 0 0 1rem 0;
+	line-height: 1;
+}
+
+section.seccion1 .contenedor-titulo p
+{
+	color: #fff;
+	margin: 0;
+	line-height: 1;
+}
