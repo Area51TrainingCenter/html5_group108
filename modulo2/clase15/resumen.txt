@@ -1,0 +1,41 @@
+Propiedades para el elemento padre.
+Este debe tener DISPLAY:FLEX como propiedad;
+Las propiedades principales para el elemento padre son:	
+
+	flex-direction: direcciona las columnas;
+		row: el contenido lo ordena como fila;
+		row-reverse: igual que la anetrior pero el ordenamiento es al reves;
+		column: el contenido lo ordena como columna;
+		column-reverse: igual que la anetrior pero el ordenamiento es al reves;
+
+	flex-wrap: acomoda los elementos
+		wrap: si un elemento no entra dentro del contenedor, lo empuja ala siguiente linea;
+		nowrap: acomoda todos los elementos dentro del contenedor;
+
+	justify-content: ordenamiento horizontal;
+		flex-star: envia las columnas a la izquierda;
+		flex-end: envi las columnas a la derecha;
+		center: envia las columnas en medio;
+		space-between: centra las columnas sin espacios laterales;
+		space-around: centra las columnas con separaciones iguales;
+
+	align-items: ordenamiento vertical de una sola linea (fila);
+		flex-star: envia las columnas arriba;
+		flex-end: envia las columnas abajo;
+		center: envia las columnas en medio;
+
+	align-content: ordenamiento vertical de mas de una linea (fila);
+		flex-star: envia las columnas arriba;
+		flex-end: envia las columnas abajo;
+		center: envia las columnas en medio;
+
+Propiedades para el elementos hijos (columnas).
+	flex-basis: similar al width.;
+	flex-grow:los elementos hijos  pueden crecer en el eje principal a partir del valor del flex-basis.
+	Esto hará que el ítem (columna o elemento hijo) se ajuste y tome todo el espacio disponible del eje, o una proporción del espacio disponible si otro ítem también puede crecer.
+
+	Si le damos a todos los elementos hijos un valor flex-grow de 1 entonces el espacio disponible en el contenedor flex será compartido igualitariamente entre estos los elementos hijos y se ajustarán para llenar el contenedor sobre el eje principal.
+
+	flex-shrink: Así como la propiedad flex-grow se encarga de añadir espacio sobre el eje principal, la propiedad flex-shrink controla como se contrae.
+
+
