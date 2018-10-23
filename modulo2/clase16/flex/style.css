@@ -1,0 +1,124 @@
+*{
+	box-sizing: border-box;
+}
+body
+{
+	padding:0px;
+	margin: 0px;
+}
+
+section
+{
+	display: flex;
+	background-color: green;
+	min-height: 100vh;
+	height: auto;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
+/*	align-content: flex-end;*/
+}
+
+.columna
+{
+	width: 50%;
+}
+
+.columna.columnaimagen
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*
+
+cuando las imagenes son EXCLUSIVAMENTE CUADRADAS
+.columna.columnaimagen > img 
+{
+	width: 50%;
+	border-radius: 100%;
+}*/
+
+.columna.columnaimagen h1
+{
+	text-align: center;
+}
+
+.circular
+{
+	width: 50%;
+	padding-bottom: 50%;
+	position: relative;
+	-webkit-perspective: 1000; /* Safari 4-8 */
+	perspective: 1000;
+	z-index: 1;
+}
+
+.circular .card 
+{
+	position: absolute;
+	width: 109%;
+	height: 100%;
+	top: 0;
+	left: 0;
+ 	transform-style: preserve-3d;
+ 	transition: all .4s ease;
+}
+
+.circular:hover .card
+{
+	transform: rotateY(180deg);
+}
+
+.circular .card img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+
+}
+
+.circular .card img:nth-child(2)
+{
+	display: block;
+	transform: rotateY(180deg);
+}
+
+
+
+
+div.bloque
+{
+	display: flex;
+	font-size: 2rem;
+	text-align: center;
+	background-color: red;
+	border: 2px solid yellow;
+	height: 10rem;
+	width: 15%;
+	align-items: center;
+	justify-content: space-around;
+}
+
+div.bloque:nth-child(1)
+{
+
+	flex-direction: column;
+
+}
+
+div.bloque div
+{
+	background-color: black;
+	color: white;
+	width: 20%;
+	font-size: 1vw;
+}
