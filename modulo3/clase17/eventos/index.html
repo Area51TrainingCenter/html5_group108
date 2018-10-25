@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Eventos</title>
+	<style>
+		body
+		{
+			font-family: "arial";
+			font-size: 20px;	
+		}
+
+		h2{
+			text-align: center;
+		}
+		p{
+			text-align: center;
+			font-size: 15px;
+		}
+		.contenedor
+		{
+			padding: 30px;
+			text-align: center;
+		}
+
+		.contenedor a
+		{
+			text-decoration: none;
+			color: #000;
+			display: inline-block;
+			background-color: #ccc;
+			padding: 10px 20px;
+			font-size: 15px;
+		}
+
+	</style>
+</head>
+<body>
+<h2>Contador</h2>
+<p id="texto">0</p>
+<input type="text" name="nombre" id="nombre">
+<div class="contenedor">
+	<a href="#" onclick="sumar();">+</a>
+	<a href="#" onclick="restar();">-</a>
+</div>
+<div class="contenedor">
+	<a href="#" onclick="resetear();">Resetear</a>
+</div>
+<script src="js/funciones.js"></script>
+</body>
+</html>
