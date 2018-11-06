@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family: arial;
+		}
+		.contenedor
+		{
+			width: 500px;
+			display: table;
+		}
+
+		.botones
+		{
+			background-color: #ccc;
+			padding: 20px;
+			font-size: 20px;
+			float: left;
+			text-align: center;
+			border: 1px solid #aaa;
+			cursor: pointer;
+		}
+		.botonesnumeros
+		{
+		
+		}
+
+		.botonesnumeros .botones
+		{
+			width: 33.33%;
+		}
+
+		.botonesnumeros .botones.botoncero
+		{
+			width: 100%;
+		}
+
+		.botonesnumeros,.botonessignos,.botonesfinales
+		{
+			float: left;
+			display: table;
+		}
+
+		.botonesnumeros,.botonessignos
+		{
+			width: 50%;
+		}
+
+		.botonessignos .botones
+		{
+			width: 100%;
+		}
+
+		.botonesfinales
+		{
+			width: 100%;
+		}
+
+		.botonesfinales .botones
+		{
+			width: 50%;
+		}
+
+		.container-calc
+		{
+			width: 100%;
+		}
+
+		.container-calc #resultado
+		{
+			width: 100%;
+			border: 1px solid #ddd;
+			background-color: #fff;
+			padding: 20px 15px;
+			height: 85px;
+			text-align: right;
+			color: #000;
+			font-size: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div class="contenedor">
+		<div class="container-calc">
+			<div id="resultado">0</div>
+		</div>
+		<div class="botonesnumeros">
+			<div class="botones" onclick="formarnumero(9)">9</div>
+			<div class="botones" onclick="formarnumero(8)">8</div>
+			<div class="botones" onclick="formarnumero(7)">7</div>
+			<div class="botones" onclick="formarnumero(6)">6</div>
+			<div class="botones" onclick="formarnumero(5)">5</div>
+			<div class="botones" onclick="formarnumero(4)">4</div>
+			<div class="botones" onclick="formarnumero(3)">3</div>
+			<div class="botones" onclick="formarnumero(2)">2</div>
+			<div class="botones" onclick="formarnumero(1)">1</div>
+			<div class="botones botoncero" onclick="formarnumero(0)">0</div>
+		</div>
+		<div class="botonessignos">
+			<div class="botones" onclick="signosimbolo('sumar')">+</div>
+			<div class="botones" onclick="signosimbolo('restar')">-</div>
+			<div class="botones" onclick="signosimbolo('multiplicar')">X</div>
+			<div class="botones" onclick="signosimbolo('dividir')">/</div>
+		</div>
+		<div class="botonesfinales">
+			<div class="botones" id="igual">=</div>
+			<div class="botones" onclick="resetear()">CE</div>
+		</div>
+	</div>
+<script src="js/funciones.js"></script>
+</body>
+</html>
